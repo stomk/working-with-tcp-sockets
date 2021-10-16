@@ -31,7 +31,7 @@ module FTP
           end
 
         when 'PWD'
-          "257 #{pwd} is the current working directory"
+          "257 \"#{pwd}\" is the current working directory"
 
         when 'PORT'
           parts = options.split(',')
