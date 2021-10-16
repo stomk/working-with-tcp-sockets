@@ -1,3 +1,5 @@
+require_relative "./common/command_handler"
+
 module FTP
   module Common
     CRLF = "\r\n"
