@@ -63,7 +63,7 @@ module FTP
           "221 Ciao"
 
         else
-          "502 Don't how to respond to #{cmd}"
+          "502 Don't know how to respond to #{cmd}"
         end
       end
 
