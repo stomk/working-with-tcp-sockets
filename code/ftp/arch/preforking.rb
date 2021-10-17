@@ -1,6 +1,10 @@
 require 'socket'
 require_relative "../common"
 
+# Load balancing はカーネルがやってくれる。
+# 複数のプロセスが同じソケットのコピー上で接続を accept しようとしているとき、
+# カーネルは空いているソケットのコピーに対してコネクションを作る。
+
 module FTP
   class Preforking
     include Common
